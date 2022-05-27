@@ -34,7 +34,7 @@ the `learn-lab` gem solve?
 Once you've pushed your solution up to GitHub, you then have to submit a link in
 Canvas. The gem provides one final step. It verifies you got all your tests to
 pass before submitting. We will have a new command called `learn-lab test`. This
-new command will output a token that you should copy paste into the comments
+new command will output a token that you should copy and paste into the comments
 field of your submission.
 
 **Important**: Throughout the course, you may see instructions in labs to run
@@ -76,7 +76,7 @@ the process_ of being forked.
 2. Once your fork is ready, click the **Code** button and copy the **SSH**
    repository info by clicking the clipboard button.
 
-![clone with SSH](https://curriculum-content.s3.amazonaws.com/canvas-welcome/clone-with-ssh.png)
+![clone with SSH](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/clone-repo.gif)
 
 **Note:** Make sure you're choosing SSH and not HTTPS.
 
@@ -84,21 +84,38 @@ the process_ of being forked.
    locally, clone it down and navigate into the folder.
 
 ```console
-$ git clone git@github.com:/macos-env-flatiron-student-portal.git
-$ cd macos-env-flatiron-student-portal
+$ git clone git@github.com:/phase-0-configuring-the-learn-lab-gem.git
+$ cd phase-0-configuring-the-learn-lab-gem
 ```
 
 4. run `npm install` to install all of the required packages.
 
-You can now you run `learn-lab test.` You should see the following:
+You can now run `learn-lab test.` You should see the following:
 
-![test passing](https://curriculum-content.s3.amazonaws.com/phase-0/test-passing.png)
+![test passing message and token](https://curriculum-content.s3.amazonaws.com/phase-0/enterprise/configuring-the-learn-lab-gem/test-passing.png)
 
-By cloning this assignment down, you've already passed the test!
+Note that, by cloning this assignment down, you've already passed the test! Go
+ahead and commit your code and push it to GitHub.
 
-When all tests are passing, you can head back to the assignment on Canvas.
-You'll want to commit and push your new code to GitHub. Now take the the token
-that you
+The other thing to notice in the screenshot above is that, once all the tests
+are passing (in this case it's just the one), you will also see a token printed
+in the test output. This token indicates that you have successfully passed all
+the tests for the lab.
+
+Let's head back to the assignment page in Canvas. To submit the assignment, in
+addition to submitting the link to your fork on GitHub, you will also submit the
+token in the "Comments" box.
+
+Specifically, you will need to:
+
+1. Paste the link to your fork on GitHub in the "Website URL" box.
+2. Go back to your terminal and select the entire token and copy it (using
+   ctrl-C or cmd-C), then paste it in the "Comments" box in Canvas.
+3. Click "Submit Assignment".
+
+It should look something like this:
+
+![submit repo url and token](https://curriculum-content.s3.amazonaws.com/phase-0/enterprise/configuring-the-learn-lab-gem/submit-assignment.png)
 
 Each assignment will be different and will include instructions on what is
 required to complete it. Some labs will have many tests. You can run
@@ -112,10 +129,8 @@ lessons that include tests. There are a few other types of assignments, though,
 that require slightly different submission steps:
 
 - **Code-alongs:** These also require code, but will guide you through what
-  needs to be written. There are no tests to pass, but you will still need to go
-  through forking, cloning, and running `learn test`. You should see a message
-  stating that no tests were found, but if you check the assignment in Canvas,
-  you should see it is marked as **Complete**.
+  needs to be written. There are no tests to pass. The process will be the same
+  as for a lab, but there will be no token to submit.
 - **Portfolio Projects:** For these assignments, you'll be building fully
   functional applications. Some guidelines and requirements will be provided,
   but it will be up to you to design and create your own app. These will
@@ -126,34 +141,17 @@ that require slightly different submission steps:
   reinforce the concepts you learn. You'll write your blog posts on a different
   platform, but submit links to them in Canvas.
 
-## Submitting Assignments
-
-For both portfolio projects and blog posts, you'll need to manually submit a
-link to your work on Canvas. While viewing the assignment, you should see a
-**Submit Assignment** button in the upper-right section of the page.
-
-![submit assignment button](https://curriculum-content.s3.amazonaws.com/canvas-welcome/submit-assignment-canvas.png)
-
-Clicking this button will bring you to the bottom of the page where you can
-submit a GitHub URL link to your work.
-
-![submit assignment form](https://curriculum-content.s3.amazonaws.com/canvas-welcome/submit-assignment-canvas-form.png)
-
-Submit both your GitHub URL **and** the token in the comments provided by
-`learn-lab test`. Upon submission you should see confetti appear, indicating
-that your submission has been accepted.
-
 ## Conclusion
 
 You've completed your first assignment using the `learn-lab` gem! You now know
 how to work on and submit assignments going forward:
 
-- Click the **Fork** button on the Canvas assignment
-- Once the assignment is forked, clone it down to your local machine
-- Complete any required work, then run `learn-lab test`
-- If all tests pass, you'll be provided a token
-- Push your work to GitHub
-- Submit the GitHub link as well as the token in the comments to mark an
-  assignment as complete.
+- Click the **Fork** button on the Canvas assignment.
+- Once the assignment is forked, clone it down to your local machine.
+- Complete any required work, then run `learn-lab test`.
+- If all tests pass, you'll be provided a token.
+- Push your work to GitHub.
+- Enter the GitHub link in the "Website URL" box, and the token in the comments
+  box, then click "Submit Assigment".
 
 Equipped with this knowledge, you are now ready to tackle greater challenges!
